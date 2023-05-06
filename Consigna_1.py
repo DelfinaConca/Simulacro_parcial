@@ -1,13 +1,13 @@
 import re
 #a)
-# string = "XabaaaYjXbabbbbaaYqXffeeY"
-# def entre_X_e_Y(string):
-#     patron = "X(.*?ab.*?)Y"                 #.*? todo lo que haya: le decimos que si entr X e Y hay algun ab me devuelva todo lo que haya entre esas letras SI es que hay algun ab, sino no me devuelve nada
-#     return re.findall(patron,string)        # ? le decimos que traiga los matches internos, por eso no puede devolver una X
-#                                             #.*? es para que nos devuelva TODO lo que esta antes del ab y TODO lo que esta despues
-# print(entre_X_e_Y(string))
+string = "XabaaaYjXbabbbbaaYqXffeeY"
+def entre_X_e_Y(string):
+    patron = "X(.*?ab.*?)Y"                 #.*? todo lo que haya: le decimos que si entr X e Y hay algun ab me devuelva todo lo que haya entre esas letras SI es que hay algun ab, sino no me devuelve nada
+    return re.findall(patron,string)        # ? le decimos que traiga los matches internos, por eso no puede devolver una X
+                                            #.*? es para que nos devuelva TODO lo que esta antes del ab y TODO lo que esta despues
+print(entre_X_e_Y(string))
 
-# #o
+#o
 
 # def entre_X_Y(string):
 #     patron = "X[^XY]*ab[^XY]*Y"                       #cuando ya negas algo, por default lo que no negas, lo toma
