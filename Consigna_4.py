@@ -23,16 +23,16 @@ class PacMan:
         if self.vidas == 0:
             print("GAME OVER")
 #1era opcion   
-    def comer_fantasma(self,fantasma):
-        if fantasma == "rosa":
-            self.puntos +=8 
-        elif fantasma == "verde":
-            self.puntos +=6
-        elif fantasma == "naranja":
-            self.puntos +=4
-        elif fantasma == "rojo":
-            self.puntos +=2
-#2da opcion
+#     def comer_fantasma(self,fantasma):
+#         if fantasma == "rosa":
+#             self.puntos +=8 
+#         elif fantasma == "verde":
+#             self.puntos +=6
+#         elif fantasma == "naranja":
+#             self.puntos +=4
+#         elif fantasma == "rojo":
+#             self.puntos +=2
+# #2da opcion
     def comer_fantasma(self,fantasma,color):
         self.puntos+= fantasma.puntos_color(color)
 
@@ -47,17 +47,22 @@ class Fantasma:
 
 
 #1era opcion
-pacman = PacMan() #como no tiene parametros, no le tengo que pasar argumentos
-print(pacman.puntos)
-pacman.comer_bolitas(10)
-print(pacman.puntos)
-pacman.comer_fantasma("verde")
-print(pacman.puntos)
+# pacman = PacMan() #como no tiene parametros, no le tengo que pasar argumentos
+# print(pacman.puntos)
+# pacman.comer_bolitas(10)
+# print(pacman.puntos)
+# pacman.comer_fantasma("verde")
+# print(pacman.puntos)
 
 #2da opcion
 pacman = PacMan()
 fantasma = Fantasma()
 
+print(pacman.puntos)
+# pacman.comer_bolitas(10)
+# print(pacman.puntos)
+# pacman.comer_fantasma("verde")
+# print(pacman.puntos)
 
 #b)
 class PacManMejorado(PacMan):
@@ -71,4 +76,3 @@ class PacManMejorado(PacMan):
     def velocidad(self):
         return 3 + self.puntos / 100
 
-#return se pone cuando el ej te pide "que diga, que devuelva, que muestre"
