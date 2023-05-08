@@ -15,11 +15,11 @@ print(entre_X_e_Y(string))
 # print(entre_X_Y(string))
 
 #b)
-# string = "aabocaggaaactazu4lggaasagag24gra1ndecta"
-# def funcionesDeExpresiones_regulares(string):
-#     return re.findall("ag([^\d]*)cta",string)
+string = "aabocaggaaactazu4lggaasagag24gra1ndecta"
+def funcionesDeExpresiones_regulares(string):
+    return re.findall("ag([^\d]*)cta",string)
 
-# print(funcionesDeExpresiones_regulares(string))
+print(funcionesDeExpresiones_regulares(string))
 
 #V O F:
 # 1. FALSO: Las palabras se escriben todas en minusc separadas por _ , No hace falta poner "funcion" en el nombre de la funcion y sus nombres tienen que representar lo que hacen, y falta en parametro entre(). 
